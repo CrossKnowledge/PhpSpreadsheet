@@ -130,7 +130,7 @@ class Statistical
      * @param mixed $rMin
      * @param mixed $rMax
      *
-     * @return float|string
+     * @return array|float|string
      */
     public static function BETADIST($value, $alpha, $beta, $rMin = 0, $rMax = 1)
     {
@@ -153,7 +153,7 @@ class Statistical
      * @param float $rMin Minimum value
      * @param float $rMax Maximum value
      *
-     * @return float|string
+     * @return array|float|string
      */
     public static function BETAINV($probability, $alpha, $beta, $rMin = 0, $rMax = 1)
     {
@@ -549,7 +549,7 @@ class Statistical
      * @param mixed $yValues array of mixed Data Series Y
      * @param mixed $xValues of mixed Data Series X
      *
-     * @return bool|float|string
+     * @return array|bool|float|string
      */
     public static function FORECAST($xValue, $yValues, $xValues)
     {
@@ -1308,7 +1308,7 @@ class Statistical
      * @param int $numObjs Number of different objects
      * @param int $numInSet Number of objects in each permutation
      *
-     * @return float|int|string Number of permutations, or a string containing an error
+     * @return array|float|int|string Number of permutations, or a string containing an error
      */
     public static function PERMUT($numObjs, $numInSet)
     {
@@ -1480,7 +1480,7 @@ class Statistical
      * @param float $mean Mean Value
      * @param float $stdDev Standard Deviation
      *
-     * @return float|string Standardized value, or a string containing an error
+     * @return array|float|string Standardized value, or a string containing an error
      */
     public static function STANDARDIZE($value, $mean, $stdDev)
     {
