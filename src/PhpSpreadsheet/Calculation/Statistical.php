@@ -179,7 +179,7 @@ class Statistical
      * @param mixed $probability Probability of success on each trial
      * @param mixed $cumulative
      *
-     * @return float|string
+     * @return array|float|string
      */
     public static function BINOMDIST($value, $trials, $probability, $cumulative)
     {
@@ -415,7 +415,7 @@ class Statistical
      * @param float $probability probability of a success on each trial
      * @param float $alpha criterion value
      *
-     * @return int|string
+     * @return array|int|string
      */
     public static function CRITBINOM($trials, $probability, $alpha)
     {
@@ -1131,7 +1131,7 @@ class Statistical
      * @param mixed $successes Threshold number of Successes
      * @param mixed $probability Probability of success on each trial
      *
-     * @return float|string The result, or a string containing an error
+     * @return array|float|string The result, or a string containing an error
      */
     public static function NEGBINOMDIST($failures, $successes, $probability)
     {
